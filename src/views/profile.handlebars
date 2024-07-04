@@ -1,0 +1,13 @@
+
+  <h1>PROFILE {{user.first_name}}</h1>
+{{#if products.length}}
+    {{#each products}}
+        <ul>
+            <li>Nombre del producto: {{name}}</li>
+            <li>Descripción del producto: {{description}}</li>
+            <li>Precio: {{price}}</li>
+        </ul>
+    {{/each}}
+{{else}}
+    <p>No hay productos</p>
+{{/if}}

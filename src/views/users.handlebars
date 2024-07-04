@@ -1,0 +1,17 @@
+<h2>
+    TODOS LOS USUARIOS
+</h2>
+
+{{#if users.length}}
+    {{#each users}}
+        <ul>
+            {{#with this}}
+                <li>Nombre: {{first_name}}</li>
+                <li>Apellido: {{last_name}}</li>
+                <li>Mail: {{email}}</li>
+            {{/with}}
+        </ul>
+    {{/each}}
+{{else}}
+    <p>No hay usuarios</p>
+{{/if}}
